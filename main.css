@@ -54,3 +54,18 @@ li a {
 li a:hover {
  	background-color: #516272;
 }
+
+.content-div {
+	background-color: #61778C;
+ 	width: 96.05%;
+ 	margin-top: -5px;
+ 	border: 30px solid gray;
+ 	font-size: large;
+ 	text-align: center;
+ }
+
+ img {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
