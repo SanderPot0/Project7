@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
+	background: gray;
 }
 
 .header {
@@ -21,11 +22,12 @@ body {
 }
 
 #header-block {
+	float:left;
+	margin-left: 10px;
 	height: 75px;
 	width: 10px;
 	background-color: #333;
 	margin-top: 10px;
-	margin-left: 370px;
 }
 
 ul {
@@ -56,16 +58,21 @@ li a:hover {
 }
 
 .content-div {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
 	background-color: #61778C;
- 	width: 96.05%;
- 	margin-top: -5px;
- 	border: 30px solid gray;
+	width: 96%;
+	height: 700px;
  	font-size: large;
  	text-align: center;
  }
 
- img {
- 	display: block;
+ #logo {
+	display: block;
+	width: 30%;
+	height: 300px;
+	padding-top: 30px;
  	margin-left: auto;
  	margin-right: auto;
 }
