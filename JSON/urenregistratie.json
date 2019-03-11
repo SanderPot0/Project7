@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Peter Parker",
+    "urenLog" : [
+      {
+        "date" :  "01-03-2019",
+        "hours" : "8",
+        "description" : "Responsiveness gerealiseerd"
+      },
+      {
+        "date" :  "02-03-2019",
+        "hours" : "3",
+        "description" : "Gewerkt aan website"
+      },
+      {
+        "date" :  "02-03-2019",
+        "hours" : "2",
+        "description" : "Feedback voor Harry"
+      }
+    ]
+  },
+
+  {
+    "name": "Harry Potter",
+    "urenLog" : [
+      {
+        "date" :  "01-03-2019",
+        "hours" : "8",
+        "description" : "Bug fixing"
+      },
+      {
+        "date" :  "02-03-2019",
+        "hours" : "5",
+        "description" : "Gewerkt aan registratie systeem"
+      },
+      {
+        "date" :  "02-03-2019",
+        "hours" : "2",
+        "description" : "Registratie systeem afgemaakt"
+      }
+    ]
+  }
