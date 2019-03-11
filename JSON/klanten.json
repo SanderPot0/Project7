@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Gerrit Slak",
+    "address" : "Ananas",
+    "zip" : "3232 XD",
+    "phone" : "064343433",
+    "place" : "Bikini Bottom",
+    "email" : "gerrit@bikini.nl"
+  },
+  {
+    "name": "Spongebob",
+    "address" : "Ananas",
+    "zip" : "3232 XD",
+    "phone" : "064343433",
+    "place" : "Bikini Bottom",
+    "email" : "spongebob@bikini.nl"
+  },
+  {
+    "name": "Patrick",
+    "address" : "EEN STEEN",
+    "zip" : "3254 XD",
+    "place" : "Bikini Bottom",
+    "email" : "patrick@yahoo.nl"
+  }
+]

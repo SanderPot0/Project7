@@ -1,0 +1,47 @@
+[
+  {
+    "klant": "Google",
+    "werk" : "Hosting en ontwikkeling google glass",
+    "producten" : [
+      {
+        "aantal" : "2",
+        "artikel" : "Hosting",
+        "perStuk" : "60"
+      },
+      {
+        "aantal" : "3",
+        "artikel" : "Ontwikkeling",
+        "perStuk" : "3000"
+      },
+      {
+        "aantal" : "6",
+        "artikel" : "Google Glass",
+        "perStuk" : "300"
+      }
+    ],
+    "Belasting" : "21"
+  },
+  {
+    "klant": "Bing",
+    "werk" : "Hosting en ontwikkeling bing glass",
+    "producten" : [
+      {
+        "aantal" : "2",
+        "artikel" : "Hosting",
+        "perStuk" : "60"
+      },
+      {
+        "aantal" : "3",
+        "artikel" : "Ontwikkeling",
+        "perStuk" : "3000"
+      },
+      {
+        "aantal" : "6",
+        "artikel" : "Bing Glass",
+        "perStuk" : "300"
+      }
+    ],
+    "Belasting" : "21"
+  }
+  
+]
