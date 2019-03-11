@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	background: gray;
+	background: #9a9da6;
 }
 
 .header {
@@ -84,5 +84,25 @@ li a:hover {
 }
 
 .tableNames{
-	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+.td{
+	text-align: center;
+}
+
+#tableContainer{
+	display: flex;
+	justify-content: center;
+}
+
+#infoContainer{
+	border: 3px solid white;
+}
+
+#toevoegen{
+	margin-top: 10px;
+
 }

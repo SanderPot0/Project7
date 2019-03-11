@@ -6,52 +6,80 @@ function load(url, callback) {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
         }
-        //   else if(xobj.status !== 200){
-        //       console.error("SUCK  MY DICK");
-        //   }
     };
     xobj.send(null);
 }
 
-load("../JSON/urenregistratie.json", function (response) {
-    var registratie = JSON.parse(response);
-    var length = registratie.length;
-    createTab(registratie);
+getStuff();
+var thingCounter = 0;
 
-    registratie.forEach(function (person) {
-
-    })
-})
-
-
-function createTab(klantenLength) {
-    let container = document.getElementById("tableContainer")
-    let containTable = document.createElement("table");
-    containTable.id = "infoContainer";
-    container.append(containTable);
-
-    for (var i = 0; i < klantenLength.length + 1; i++) {
-        var tr = document.createElement("tr");
-        tr.id = "row" + [i];
-        tr.class = "rows";
-        if (i == 0) {
-            for (var e = 0; e < klantenLength.length + 2; e++) {
-                var thingArray = ["name", "date", "hours", "description"]
-                var th = document.createElement("th")
-                th.className = "tableNames";
-                th.innerHTML = thingArray[e];
-                tr.append(th);
+function getStuff() {
+    load("../JSON/urenregistratie.json", function (response) {
+        var registratie = JSON.parse(response);
+        var mainArray = [];
+        if (thingCounter < registratie.length) {
+            var subTags = registratie[thingCounter].urenLog;
+            for (var i = 0; i < subTags.length; i++) {
+                mainArray[0] = registratie[thingCounter].name;
+                mainArray[1] = subTags[i].date;
+                mainArray[2] = subTags[i].hours;
+                mainArray[3] = subTags[i].description;
+                createTab(mainArray);
             }
         }
 
-            if (i >= 1) {
-                for (var x = 0; x < thingArray.length; x++){
-                    var td = document.createElement("td");
-                    td.id = "cell" + [x];
-                    td.className = "cells"
-                    tr.append(td);
-                }
-            }
-        containTable.append(tr);
+        if (thingCounter >= 0) {
+            thingCounter++;
+            newColumn = 0;
+            getStuff();
+        }
+    })
+}
+
+
+let container = document.getElementById("tableContainer")
+let containTable = document.createElement("table");
+containTable.id = "infoContainer";
+container.append(containTable);
+
+var newColumn = 0;
+var rowNum = 0;
+
+function createTab(mainArray) {
+    var infoTr = document.createElement("tr");
+    infoTr.id = "infoRow";
+    infoTr.class = "rows";
+
+    var tr = document.createElement("tr");
+    tr.id = "row" + [rowNum];
+    tr.class = "rows";
+    rowNum++;
+    
+    if (newColumn == 0) {
+        var thingArray = ["Name", "Date", "Hours", "Description"]
+        for (var e = 0; e < thingArray.length; e++) {
+            var th = document.createElement("th")
+            th.className = "tableNames";
+            th.innerHTML = thingArray[e];
+            infoTr.append(th);
+            containTable.append(infoTr);
+            newColumn = 1;
+        }
+
     }
+    if (newColumn !== 0) {
+        for (var x = 0; x < mainArray.length; x++) {
+            var td = document.createElement("td");
+            td.id = "cell" + x;
+            td.className = "td"
+            if(mainArray[x] !== undefined){
+                td.innerHTML = mainArray[x];
+            }
+            else{
+                td.innerHTML = "No data!";
+            }
+            tr.append(td);
+        }
+    }
+    containTable.append(tr);
 }

@@ -39,5 +39,25 @@
         "description" : "Registratie systeem afgemaakt"
       }
     ]
+  },
+  {
+    "name": "Harry asd",
+    "urenLog" : [
+      {
+        "date" :  "01-203-2019",
+        "hours" : "8",
+        "description" : "Bug2 fixing"
+      },
+      {
+        "date" :  "02-03-22019",
+        "hours" : "5",
+        "description" : "G2ewerkt aan registratie systeem"
+      },
+      {
+        "date" :  "02-203-2019",
+        "hours" : "32",
+        "description" : "Reg2istratie systeem afgemaakt"
+      }
+    ]
   }
 ]
