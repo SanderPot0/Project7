@@ -28,7 +28,20 @@ body {
 	height: 75px;
 	width: 10px;
 	background-color: #9fbcd3;
-	margin-top: 10px;
+	margin-top: 15px;
+}
+
+#intro{
+	font-size: 30px;
+	color: #9fbcd3;
+	margin-top: 50px;
+}
+
+#who{
+	font-size: 20px;
+	color: #9fbcd3;
+	margin-top: 56px;
+
 }
 
 ul {
@@ -45,11 +58,11 @@ li {
 }
 
 .menuItems{
-	line-height: 95px;
+	line-height: 100px;
  	display: block;
  	color: #9fbcd3;;
  	text-align: center;
- 	padding: 6px 16px;
+ 	padding: 4px 16px;
  	text-decoration: none;
 }
 
@@ -63,7 +76,7 @@ li a:hover {
 	margin-top: 15px;
 	background-color: #275b85;
 	width: 96%;
-	height: 700px;
+	height: 800px;
  	font-size: large;
  	text-align: center;
  }
@@ -104,7 +117,7 @@ tr{
 	border: 2px solid #71275c;;
 	text-align: center;
 	padding: 2px;
-}	/* float: right; */
+}	
 
 
 #tableContainer{
@@ -119,5 +132,20 @@ tr{
 
 #toevoegen{
 	margin-top: 10px;
+	background: #5389b6;
+	text-align: center;
+	cursor: pointer;
+	color: black;
+	border: 2px ridge #254157;
+}
 
+#toevoegen:hover{
+	-webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+	background-color: #6aa8db;
+	text-align: center;
+	cursor: pointer;
+	color:white;
+	border: 2px ridge #254157;
 }
