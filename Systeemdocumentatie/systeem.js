@@ -14,17 +14,32 @@ getStuff();
 var thingCounter = 0;
 
 function getStuff() {
-    load("../JSON/klanten.json", function (response) {
+    load("../JSON/sysDocu.json", function (response) {
         var registratie = JSON.parse(response);
         var mainArray = [];
         if (thingCounter < registratie.length) {
+            var subTags = registratie[thingCounter].hardware;
+            console.log(registratie[thingCounter].hardware);
+            for (var i = 0; i < subTags.length; i++) {
                 mainArray[0] = registratie[thingCounter].name;
-                mainArray[1] = registratie[thingCounter].address;
-                mainArray[2] = registratie[thingCounter].zip;
-                mainArray[3] = registratie[thingCounter].phone;
-                mainArray[4] = registratie[thingCounter].place;
-                mainArray[5] = registratie[thingCounter].email;
+                mainArray[1] = registratie[thingCounter].location;
+                mainArray[2] = registratie[thingCounter].os;
+                // mainArray[3] = subTags[i].case;
+                // mainArray[4] = subTags[i].motherboard;
+                // mainArray[5] = subTags[i].cpu;
+                // mainArray[6] = subTags[i].ram;
+                // mainArray[7] = subTags[i].graphicscard;
+                // mainArray[8] = subTags[i].soundcard;
+                // mainArray[9] = subTags[i].harddisk;
+                mainArray[3] = registratie[thingCounter].apps;
+                mainArray[4] = registratie[thingCounter].security;
+                subTags = registratie[thingCounter].users;
+                mainArray[5] = subTags[i].user;
+                mainArray[6] = subTags[i].pass;
+                mainArray[7] = subTags[i].rights;
+                mainArray[8] = registratie[thingCounter].other;
                 createTab(mainArray);
+            }
         }
 
         if (thingCounter >= 0) {
@@ -54,7 +69,7 @@ function createTab(mainArray) {
     rowNum++;
     
     if (newColumn == 0) {
-        var thingArray = ["Naam", "Adress", "Zip", "Nummer", "Woonplaats", "Email"];
+        var thingArray = ["Naam", "Locatie", "OS", "Apps", "Security", "User", "Password", "Rights", "Other"];
         for (var e = 0; e < thingArray.length; e++) {
             var th = document.createElement("th")
             th.className = "tableNames";
@@ -62,6 +77,7 @@ function createTab(mainArray) {
             infoTr.append(th);
             containTable.append(infoTr);
             newColumn = 1;
+            //"Case", "Motherboard", "Cpu", "Ram", "Graphicscard", "Soundcard", "Harddisk"
         }
     }
     if (newColumn !== 0) {

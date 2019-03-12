@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Henk (steen)",
+    "location" : "Burger King",
+    "os" : "Windows 10",
+    "hardware" : {
+      "case" : "Midtower ATX 10",
+      "motherboard" : "Gigabye GX360",
+      "cpu" : "Intel Core I7",
+      "ram" : "8GB DDR4",
+      "graphicscard" : "Geforce GTX 1050",
+      "soundcard" : "Yes",
+      "harddisk" : "1TB HDD",
+      "other" : "Yes"
+    },
+    "apps" : "OSRS",
+    "security" : "Avast Free Antivirus",
+    "specialSettings" : "Yes",
+    "users" : [
+      {
+        "user" : "Java Developer",
+        "pass" : "abc123",
+        "rights" : "User"
+      }
+    ],
+    "other" : "Very Special"
+  }
+]

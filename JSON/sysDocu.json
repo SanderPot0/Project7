@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Henk (steen)",
+    "location" : "Burger King",
+    "os" : "Windows 10",
+    "hardware" : [ {
+      "case" : "Midtower ATX 10",
+      "motherboard" : "Gigabye GX360",
+      "cpu" : "Intel Core I7",
+      "ram" : "8GB DDR4",
+      "graphicscard" : "Geforce GTX 1050",
+      "soundcard" : "Yes",
+      "harddisk" : "1TB HDD"
+    }
+  ],
+    "apps" : "OSRS",
+    "security" : "Avast Free Antivirus",
+    "users" : [
+      {
+        "user" : "Java Developer",
+        "pass" : "abc123",
+        "rights" : "User"
+      }
+    ],
+    "other" : "Very Special"
+  },
+  {
+    "name": "Harry (Niet steen)",
+    "location" : "Mc Donalds",
+    "os" : "Windows Vista",
+    "hardware" : [ {
+      "case" : "Midtower ATX 1070",
+      "motherboard" : "Asus rock",
+      "cpu" : "Intel Core I5",
+      "ram" : "8GB DDR4",
+      "graphicscard" : "Geforce GTX 1050",
+      "soundcard" : "Yes",
+      "harddisk" : "1TB HDD"
+    }
+  ],
+    "apps" : "Subway Surfer",
+    "security" : "Avast Free Antivirus",
+    "users" : [
+      {
+        "user" : "Domotica Developer",
+        "pass" : "welkom10",
+        "rights" : "User"
+      }
+    ],
+    "other" : "Very Special"
+  }
+]

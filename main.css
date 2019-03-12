@@ -2,19 +2,19 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	background: #9a9da6;
+	background: #7aa8cf;
 }
 
 .header {
 	width: 100%;
 	height: 100px;
-	background-color: #61778C;
+	background-color: #386e9b;
 	display: inline-block;
 }
 
 #header-txt {
 	float: left;
-	color: #333;
+	color: #9fbcd3;
 	text-decoration: none;
 	line-height: 95px;
 	font-size: 5vh;
@@ -27,7 +27,7 @@ body {
 	margin-left: 10px;
 	height: 75px;
 	width: 10px;
-	background-color: #333;
+	background-color: #9fbcd3;
 	margin-top: 10px;
 }
 
@@ -47,21 +47,21 @@ li {
 .menuItems{
 	line-height: 95px;
  	display: block;
- 	color: black;
+ 	color: #9fbcd3;;
  	text-align: center;
  	padding: 6px 16px;
  	text-decoration: none;
 }
 
 li a:hover {
- 	background-color: #516272;
+ 	background-color: #44749c;
 }
 
 .content-div {
 	display: block;
 	margin: 0 auto;
 	margin-top: 15px;
-	background-color: #61778C;
+	background-color: #275b85;
 	width: 96%;
 	height: 700px;
  	font-size: large;
@@ -79,19 +79,33 @@ li a:hover {
 
 
 .pageTitle{
+	color: #e7d8d8;
 	padding-top: 30px;
 	text-align: center;
 }
 
 .tableNames{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 3px;
+	background: #71275c;
+	color: #c7c5c5;
+	border: 1px solid  #71275c;
+}
+
+#infoRow{
+	background: #71275c;
+}
+
+tr{
+	background:#c0bbee ;
 }
 
 
 .td{
+	border: 2px solid #71275c;;
 	text-align: center;
-}
+	padding: 2px;
+}	/* float: right; */
+
 
 #tableContainer{
 	display: flex;
@@ -99,7 +113,8 @@ li a:hover {
 }
 
 #infoContainer{
-	border: 3px solid white;
+	border: 3px solid  #71275c;;
+	background: white;
 }
 
 #toevoegen{
