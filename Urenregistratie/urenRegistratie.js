@@ -65,9 +65,8 @@ function createTab(mainArray) {
             containTable.append(infoTr);
             newColumn = 1;
         }
-
+        return;
     }
-    if (newColumn !== 0) {
         for (var x = 0; x < mainArray.length; x++) {
             var td = document.createElement("td");
             td.id = "cell" + x;
@@ -76,10 +75,9 @@ function createTab(mainArray) {
                 td.innerHTML = mainArray[x];
             }
             else{
-                td.innerHTML = "No data!";
+                td.innerHTML = "No data;!";
             }
             tr.append(td);
         }
-    }
     containTable.append(tr);
 }

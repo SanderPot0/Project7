@@ -6,17 +6,17 @@
       {
         "aantal" : "2",
         "artikel" : "Hosting",
-        "perStuk" : "60"
+        "perstuk" : "60"
       },
       {
         "aantal" : "3",
         "artikel" : "Ontwikkeling",
-        "perStuk" : "3000"
+        "perstuk" : "3000"
       },
       {
         "aantal" : "6",
         "artikel" : "Google Glass",
-        "perStuk" : "300"
+        "perstuk" : "300"
       }
     ],
     "Belasting" : "21"
@@ -28,17 +28,17 @@
       {
         "aantal" : "2",
         "artikel" : "Hosting",
-        "perStuk" : "60"
+        "perstuk" : "60"
       },
       {
         "aantal" : "3",
         "artikel" : "Ontwikkeling",
-        "perStuk" : "3000"
+        "perstuk" : "3000"
       },
       {
         "aantal" : "6",
         "artikel" : "Bing Glass",
-        "perStuk" : "300"
+        "perstuk" : "300"
       }
     ],
     "Belasting" : "21"

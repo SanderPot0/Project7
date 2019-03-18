@@ -24,13 +24,6 @@ function getStuff() {
                 mainArray[0] = registratie[thingCounter].name;
                 mainArray[1] = registratie[thingCounter].location;
                 mainArray[2] = registratie[thingCounter].os;
-                // mainArray[3] = subTags[i].case;
-                // mainArray[4] = subTags[i].motherboard;
-                // mainArray[5] = subTags[i].cpu;
-                // mainArray[6] = subTags[i].ram;
-                // mainArray[7] = subTags[i].graphicscard;
-                // mainArray[8] = subTags[i].soundcard;
-                // mainArray[9] = subTags[i].harddisk;
                 mainArray[3] = registratie[thingCounter].apps;
                 mainArray[4] = registratie[thingCounter].security;
                 subTags = registratie[thingCounter].users;

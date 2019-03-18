@@ -24,7 +24,7 @@ function getStuff() {
                 mainArray[1] = registratie[thingCounter].werk;
                 mainArray[2] = subTags[i].aantal;
                 mainArray[3] = subTags[i].artikel;
-                mainArray[4] = subTags[i].perStuk;
+                mainArray[4] = subTags[i].perstuk;
                 createTab(mainArray);
             }
         }
@@ -66,9 +66,8 @@ function createTab(mainArray) {
             containTable.append(infoTr);
             newColumn = 1;
         }
-
+        return;
     }
-    if (newColumn !== 0) {
         for (var x = 0; x < mainArray.length; x++) {
             var td = document.createElement("td");
             td.id = "cell" + x;
@@ -81,6 +80,5 @@ function createTab(mainArray) {
             }
             tr.append(td);
         }
-    }
     containTable.append(tr);
 }
