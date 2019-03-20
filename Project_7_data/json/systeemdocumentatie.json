@@ -1,0 +1,28 @@
+[
+  {
+    "name": "",
+    "location" : "",
+    "os" : "",
+    "hardware" : {
+      "case" : "",
+      "motherboard" : "",
+      "cpu" : "",
+      "ram" : "",
+      "graphicscard" : "",
+      "soundcard" : "",
+      "harddisk" : "",
+      "other" : ""
+    },
+    "apps" : "",
+    "security" : "",
+    "specialSettings" : "",
+    "users" : [
+      {
+        "user" : "",
+        "pass" : "",
+        "rights" : ""
+      }
+    ],
+    "other" : ""
+  }
+]
