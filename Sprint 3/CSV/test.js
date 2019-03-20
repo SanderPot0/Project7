@@ -1,6 +1,6 @@
 function load(url, callback) {
     var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
+    xobj.overrideMimeType("application/CSV");
     xobj.open('GET', url, true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
