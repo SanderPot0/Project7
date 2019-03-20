@@ -17,18 +17,11 @@ load("test.csv", function (response) {
     for(var i = 0; i < file.length; i++){
         file = file.replace(",", " ")
     }
-    var rowDetect = 0;
-    var shitArray = [];
+    file = file.split(/\r\n|\n/);
         console.log(file[0]);
-        if(rowDetect == 4){
-            shitArray[0] = file + "\n";
-            document.getElementById("input").innerHTML = "<div>" + shitArray + "</div>";
-            rowDetect == 0;
-        }
-        else{
-            shitArray[0] = file;
-            console.log(shitArray);
-            document.getElementById("input").innerHTML+= "<div>" + shitArray + "</div>";
-        }
-        rowDetect++;
+            console.log(file);
+            for(var i = 0; i < file.length; i++){
+                document.getElementById("input").innerHTML+= "<h4 id='heck'>" + file[i] +"</h4>"  + "<br>";
+            }
+           
 })
