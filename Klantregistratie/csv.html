@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form-inline">
+        <div class="form-group">
+          <label for="files">Upload a CSV formatted file:</label>
+          <input type="file" id="files"  class="form-control" accept=".csv" required />
+        </div>
+        <div class="form-group">
+         <button target="javascript:void(0)" onclick="csv()" type="button" id="submit-file" class="btn btn-primary">Upload File</button>
+         </div>
+    </form>
+    <div id="input"></div>
+</body>
+<script src="test.js" rel="text/javascript"></script>
+</html>
+	
