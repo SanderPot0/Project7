@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Quinn",
+    "address" : "Korpus 4",
+    "zip" : "7890 XP",
+    "phone" : "0678965421",
+    "place" : "Emmen",
+    "email" : "info@karpari.nl"
+  },
+  {
+    "name": "Sander",
+    "address" : "Litouwerlaan 100",
+    "zip" : "1235 XP",
+    "phone" : "0634567123",
+    "place" : "Kartonnendoos straat 5",
+    "email" : "info@letarus.nl"
+  },
+  {
+    "name": "Vera",
+    "address" : "Voorbeeld 233",
+    "zip" : "7654 EC",
+    "phone" : "0654321234",
+    "place" : "Hardenberg",
+    "email" : "info@example.nl"
+  },
+  {
+    "name": "Gido",
+    "address" : "Korpus 4",
+    "zip" : "7890 EC",
+    "phone" : "0678965421",
+    "place" : "Emmen",
+    "email" : "info@karparik.nl"
+  }
+]
